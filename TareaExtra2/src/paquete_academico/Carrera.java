@@ -24,7 +24,7 @@ public class Carrera {
     // Metodo toString
     @Override
     public String toString(){
-        String cadena = String.format(" de la carrera %s - modalidad (%s). ", obtener_nombre(), obtener_modalidad());
+        String cadena = String.format(" %s - modalidad (%s). ", obtener_nombre(), obtener_modalidad());
         return cadena;
     }
 }
