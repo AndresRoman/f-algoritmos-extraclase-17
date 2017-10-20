@@ -1,4 +1,4 @@
-package principal;
+package tarea1;
 /**
  * Autor: Andres Roman
  * Fecha: 16/10/2017
