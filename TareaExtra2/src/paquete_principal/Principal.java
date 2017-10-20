@@ -57,59 +57,43 @@ public class Principal {
         // Se imprime Caso 1
         System.out.println("Caso 1:");
         System.out.println("");
-        System.out.println(est1);
+        System.out.println(est1);  
         
-        
-        // Se crean las clases de Pais
-        Pais pu2 = new Pais();
-        pu2.establecer_nombre("Ecuador");
-        Pais pa3 = new Pais();
-        pa3.establecer_nombre("Venezuela");
-        Pais pa4 = new Pais();
-        pa4.establecer_nombre("Peru");
-        // Se crean las clases de Docente
-        Docente d3 = new Docente();
-        d3.establecer_nombres("Luis");
-        d3.establecer_apellidos("Armijos");
-        d3.establecer_pais(pa3);
-        Docente d4 = new Docente();
-        d4.establecer_nombres("Maria");
-        d4.establecer_apellidos("Ruiz");
-        d4.establecer_pais(pa4);
-        // Se crean las clases de Carrera
-        Carrera c3 = new Carrera();
-        c3.establecer_nombre("Ingenieria Quimica");
-        c3.establecer_modalidad("presencial");
-        Carrera c4 = new Carrera();
-        c4.establecer_nombre("Ingenieria Quimica");
-        c4.establecer_modalidad("distancia");
-        // Se crean las clases de Asignatura
-        Asignatura a3 = new Asignatura();
-        a3.establecer_nombre("Biologia");
-        a3.establecer_creditos(9);
-        a3.establecer_carrera(c3);
-        a3.establecer_docente(d3);
-        Asignatura a4 = new Asignatura();
-        a4.establecer_nombre("Fisica");
-        a4.establecer_creditos(7);
-        a4.establecer_carrera(c4);
-        a4.establecer_docente(d4);
-        // Se crean las clases Universidad
-        Universidad uni2 = new Universidad();
-        uni2.establecer_nombre("Universidad Tecnica Equinoccial");
-        uni2.establecer_siglas("UTE");
-        uni2.establecer_pais(pu2);
+        // Caso 2
+        pu.establecer_nombre("Ecuador");
+        pa1.establecer_nombre("Venezuela");
+        pa2.establecer_nombre("Peru");
+        d1.establecer_nombres("Luis");
+        d1.establecer_apellidos("Armijos");
+        d1.establecer_pais(pa1);
+        d2.establecer_nombres("Maria");
+        d2.establecer_apellidos("Ruiz");
+        d2.establecer_pais(pa2);
+        c1.establecer_nombre("Ingenieria Quimica");
+        c1.establecer_modalidad("presencial");
+        c2.establecer_nombre("Ingenieria Quimica");
+        c2.establecer_modalidad("distancia");
+        a1.establecer_nombre("Biologia");
+        a1.establecer_creditos(9);
+        a1.establecer_carrera(c1);
+        a1.establecer_docente(d1);
+        a2.establecer_nombre("Fisica");
+        a2.establecer_creditos(7);
+        a2.establecer_carrera(c2);
+        a2.establecer_docente(d2);
+        uni.establecer_nombre("Universidad Tecnica Equinoccial");
+        uni.establecer_siglas("UTE");
+        uni.establecer_pais(pu);
         // Se crea la clase Estudiante
         Estudiante est2 = new Estudiante();
         est2.establecer_nombres("Ana");
         est2.establecer_apellidos("Lima J.");
-        est2.establecer_asignatura_1(a3);
-        est2.establecer_asignatura_2(a4);
-        est2.establecer_universidad(uni2);
+        est2.establecer_asignatura_1(a1);
+        est2.establecer_asignatura_2(a2);
+        est2.establecer_universidad(uni);
         // Se imprime Caso 2
         System.out.println("Caso 2:");
         System.out.println("");
-        System.out.println(est2);
-        
+        System.out.println(est2);        
     }
 }
